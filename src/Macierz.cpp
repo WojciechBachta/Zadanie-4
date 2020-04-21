@@ -22,8 +22,23 @@ const Macierz Macierz::operator * () const
     }
     return Wynik;
 }
+/*
+//MODYFIKACJA 2
+Macierz Macierz::operator * (const Macierz & M) const
+{
+    Macierz Wynik;
 
+    for(int i=0; i<ROZMIAR; i++)
+    {
+        for(int j=0; j<ROZMIAR; j++)
+            for(int k=0; k<ROZMIAR; k++)
+            Wynik._SkladnikiM[i][j]=Wynik._SkladnikiM[i][j]+this->_SkladnikiM[i+k][j]*M._SkladnikiM[i][j+k];
 
+    }
+    return Wynik;
+
+}
+*/
 Macierz::Macierz()
 {
     Wektor W;

@@ -39,6 +39,7 @@ class Macierz {
     Macierz operator + (const Macierz & M) const;
     Macierz operator - (const Macierz & M) const;
     Macierz operator * (const double l) const;
+    Macierz operator * (const Macierz & M) const;
     Wektor operator * (const Wektor W) const;
 
     const Macierz MacierzOdwrotna() const;
